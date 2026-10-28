@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b6b4f">
+<title>Bidaare Connect People | Connecting People, Creating Opportunities</title>
+<style>
+:root{--green:#0b6b4f;--deep:#084c3b;--gold:#ffc857;--cream:#f7faf8;--ink:#182520;--muted:#607168;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}
+a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}
+header{background:var(--white);border-bottom:1px solid #e2ebe6;position:sticky;top:0;z-index:10}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{font-weight:800;color:var(--green);font-size:1.05rem;text-decoration:none;display:flex;align-items:center;gap:9px}
+.logo{display:grid;place-items:center;background:var(--green);color:white;width:38px;height:38px;border-radius:12px;font-weight:900}
+nav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}nav a{text-decoration:none;font-size:.9rem;font-weight:700}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 17px;background:var(--green);color:white;text-decoration:none;font-weight:800;cursor:pointer}
+.btn.gold{background:var(--gold);color:#30250b}.btn.light{background:white;color:var(--green);border:1px solid #d6e6dd}
+.hero{background:linear-gradient(130deg,var(--deep),var(--green));color:white;padding:58px 0 52px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.pill{display:inline-block;background:#ffffff20;border:1px solid #ffffff45;border-radius:99px;padding:6px 12px;font-size:.85rem}
+h1{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.08;margin:16px 0}
+.hero p{font-size:1.08rem;max-width:650px;color:#e8f5ef}
+.hero-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:22px;padding:22px}
+.hero-card .emoji{font-size:2.2rem}.hero-card h3{margin:8px 0}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.searchbox{background:white;padding:15px;border-radius:16px;display:grid;grid-template-columns:1fr 1fr auto;gap:9px;margin-top:24px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #d5e0da;border-radius:10px;font:inherit;background:white;color:var(--ink)}
+section{padding:44px 0}.section-head{display:flex;justify-content:space-between;gap:15px;align-items:end;margin-bottom:20px}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:0 0 7px}.muted{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:white;border:1px solid #e2ebe6;border-radius:17px;padding:19px;box-shadow:0 5px 18px #143d2510}
+.card .icon{font-size:1.8rem}.card h3{margin:8px 0 5px}.card p{color:var(--muted);margin:0 0 12px}
+.tag{display:inline-block;background:#e9f6ef;color:var(--green);font-size:.78rem;font-weight:800;border-radius:99px;padding:5px 9px;margin-bottom:8px}
+.listing-placeholder{border:1px dashed #9cb9aa;border-radius:17px;padding:24px;text-align:center;background:#f0f8f3}
+.steps{counter-reset:step}.step{position:relative;padding-left:48px;min-height:42px;margin:18px 0}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:34px;height:34px;display:grid;place-items:center;background:var(--gold);border-radius:50%;font-weight:900}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid .full{grid-column:1/-1}
+.notice{font-size:.88rem;background:#fff7df;border:1px solid #f1d995;border-radius:12px;padding:13px;color:#5c4a19}
+footer{background:#073f32;color:#e8f5ef;padding:30px 0}footer a{color:#fff}footer .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.small{font-size:.83rem;color:#d0e6db}
+.hidden{display:none!important}
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}nav{gap:9px}nav a{font-size:.8rem}.searchbox{grid-template-columns:1fr}.hero{padding:42px 0}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.nav{padding:10px 0;align-items:flex-start}.brand{font-size:.9rem}nav{max-width:170px;justify-content:flex-end}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">BC</span><span>Bidaare Connect People</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#marketplace">Marketplace</a><a href="#services">Services</a><a href="#how">How it works</a><a href="#join">Join free</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill">🌍 A worldwide community marketplace</span>
+      <h1>Connect with people.<br>Create opportunities.</h1>
+      <p>Discover products, find helpful services, promote your business, and meet people who can help you take the next step.</p>
+      <div class="hero-actions"><a class="btn gold" href="#marketplace">Explore marketplace</a><a class="btn light" href="#join">Post an offer for free</a></div>
+      <form class="searchbox" id="searchForm">
+        <input id="searchText" aria-label="Search listings" placeholder="What are you looking for?">
+        <select id="searchType" aria-label="Choose category"><option value="all">All categories</option><option value="product">Products</option><option value="service">Services</option><option value="business">Business</option></select>
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="hero-card">
+      <div class="emoji">🤝 🌐</div><h3>Good connections can open doors.</h3>
+      <p>For buyers, sellers, independent workers, and small businesses around the world.</p>
+      <hr style="border:0;border-top:1px solid #ffffff35;margin:20px 0">
+      <strong>Free to join • Mobile friendly • Built around trust</strong>
+    </div>
+  </div>
+</section>
+<section id="marketplace">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Explore the marketplace</h2><p class="muted">Browse sample categories. Real listings can be added as the community grows.</p></div></div>
+    <div class="grid" id="listingGrid">
+      <article class="card listing" data-type="product"><span class="tag">PRODUCTS</span><div class="icon">📱</div><h3>Electronics & phones</h3><p>Phones, accessories, computers, and useful technology.</p><a class="btn light" href="#join">List a product</a></article>
+      <article class="card listing" data-type="product"><span class="tag">PRODUCTS</span><div class="icon">👕</div><h3>Clothing & shoes</h3><p>Clothing, shoes, bags, and everyday items.</p><a class="btn light" href="#join">List a product</a></article>
+      <article class="card listing" data-type="product"><span class="tag">PRODUCTS</span><div class="icon">🏠</div><h3>Home & household</h3><p>Furniture, kitchen items, and household products.</p><a class="btn light" href="#join">List a product</a></article>
+      <article class="card listing" data-type="service" id="services"><span class="tag">SERVICES</span><div class="icon">🧹</div><h3>Cleaning & home help</h3><p>Connect with people offering cleaning and home services.</p><a class="btn light" href="#join">Offer a service</a></article>
+      <article class="card listing" data-type="service"><span class="tag">SERVICES</span><div class="icon">🔧</div><h3>Repairs & skilled work</h3><p>Phone repair, maintenance, and other practical skills.</p><a class="btn light" href="#join">Offer a service</a></article>
+      <article class="card listing" data-type="business"><span class="tag">BUSINESS</span><div class="icon">📣</div><h3>Promote a business</h3><p>Introduce your business and reach potential customers.</p><a class="btn light" href="#join">Add your business</a></article>
+    </div>
+    <p id="noResults" class="notice hidden">No matching categories found. Try another search.</p>
+  </div>
+</section>
+<section id="how" style="background:#edf6f0">
+  <div class="wrap">
+    <div class="section-head"><div><h2>How it works</h2><p class="muted">A simple starting point for building trust and making real connections.</p></div></div>
+    <div class="grid">
+      <div class="card"><div class="icon">👤</div><h3>1. Introduce yourself</h3><p>Tell people who you are and what you sell or what service you offer.</p></div>
+      <div class="card"><div class="icon">🔎</div><h3>2. Find a match</h3><p>Browse categories and contact a seller or service provider directly.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>3. Agree safely</h3><p>Confirm price, delivery, and terms directly before exchanging money.</p></div>
+    </div>
+  </div>
+</section>
+<section id="earn">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Ways to grow with Bidaare</h2><p class="muted">Income comes from real products, services, and clearly disclosed business arrangements.</p></div></div>
+    <div class="grid">
+      <div class="card"><div class="icon">🛍️</div><h3>Sell products</h3><p>Show what you sell and connect with interested buyers.</p></div>
+      <div class="card"><div class="icon">🧰</div><h3>Offer services</h3><p>Find customers for your skills, from repairs to home services.</p></div>
+      <div class="card"><div class="icon">📈</div><h3>Promote businesses</h3><p>Help customers discover a business. Paid promotion can be introduced later.</p></div>
+    </div>
+    <p class="notice" style="margin-top:18px">Safety note: Bidaare does not guarantee income or verify a listing automatically. Do not pay an unknown person in advance without checking them. Avoid sharing passwords, verification codes, or sensitive financial details.</p>
+  </div>
+</section>
+<section id="join" style="background:#edf6f0">
+  <div class="wrap">
+    <div class="section-head"><div><h2>Join or submit a listing</h2><p class="muted">Use this form to prepare a listing message. This starter version does not store submissions online.</p></div></div>
+    <div class="grid" style="grid-template-columns:1.1fr .9fr">
+      <div class="card">
+        <form id="listingForm" class="form-grid">
+          <div><label for="name">Your name *</label><input id="name" required placeholder="Your name"></div>
+          <div><label for="country">Country *</label><input id="country" required placeholder="Country"></div>
+          <div><label for="kind">What do you offer? *</label><select id="kind" required><option value="">Choose one</option><option>Product for sale</option><option>Service</option><option>Business advertisement</option><option>Looking for a product or service</option></select></div>
+          <div><label for="price">Price (optional)</label><input id="price" placeholder="e.g. $25 or negotiable"></div>
+          <div class="full"><label for="details">Describe it *</label><textarea id="details" rows="4" required placeholder="Describe your product, service, or request"></textarea></div>
+          <div class="full"><label for="contact">WhatsApp number with country code (optional)</label><input id="contact" placeholder="e.g. +1 555 123 4567"></div>
+          <div class="full"><button class="btn" type="submit">Prepare my listing message</button></div>
+        </form>
+        <div id="messageOutput" class="notice hidden" style="margin-top:14px" aria-live="polite"></div>
+      </div>
+      <div class="card">
+        <h3>Contact Bidaare</h3>
+        <p>Connect with us to ask questions or learn how to post your first listing.</p>
+        <p><strong>WhatsApp:</strong> Add the owner's WhatsApp number before publishing this contact button.</p>
+        <a class="btn" href="https://wa.me/?text=Hello%20Bidaare%20Connect%20People%2C%20I%20would%20like%20to%20learn%20how%20to%20join." target="_blank" rel="noopener">Open WhatsApp</a>
+        <hr style="border:0;border-top:1px solid #e2ebe6;margin:22px 0">
+        <h3>Coming in a later version</h3>
+        <ul><li>Member accounts and profiles</li><li>Listings saved in an online database</li><li>Private website messaging</li><li>Payment and commission tracking</li></ul>
+        <p class="muted" style="font-size:.9rem">These advanced features need a secure backend and may require a paid service or custom development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap foot"><div><strong>🌍 Bidaare Connect People</strong><p class="small">Connecting People. Creating Opportunities. Growing Together.</p></div><div class="small">© <span id="year"></span> Bidaare Connect People<br>Worldwide community marketplace concept</div></div>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('searchForm').addEventListener('submit',function(e){
+ e.preventDefault();const q=document.getElementById('searchText').value.trim().toLowerCase();const t=document.getElementById('searchType').value;let shown=0;
+ document.querySelectorAll('.listing').forEach(card=>{const matchType=t==='all'||card.dataset.type===t;const matchText=!q||card.innerText.toLowerCase().includes(q);card.classList.toggle('hidden',!(matchType&&matchText));if(matchType&&matchText)shown++;});
+ document.getElementById('noResults').classList.toggle('hidden',shown>0);document.getElementById('marketplace').scrollIntoView({behavior:'smooth'});
+});
+document.getElementById('listingForm').addEventListener('submit',function(e){
+ e.preventDefault();const val=id=>document.getElementById(id).value.trim();
+ const msg=`Bidaare Connect People — New listing\\nName: ${val('name')}\\nCountry: ${val('country')}\\nType: ${val('kind')}\\nPrice: ${val('price')||'Not specified'}\\nDetails: ${val('details')}\\nWhatsApp: ${val('contact')||'Not provided'}`;
+ const box=document.getElementById('messageOutput');box.classList.remove('hidden');box.innerHTML='<strong>Your listing message is ready.</strong><p>Copy the message below and send it to the website owner to publish your listing.</p><textarea id="generatedMessage" rows="8"></textarea><button class="btn" type="button" id="copyMessage" style="margin-top:8px">Copy message</button>';
+ document.getElementById('generatedMessage').value=msg;
+ document.getElementById('copyMessage').addEventListener('click',async()=>{const ta=document.getElementById('generatedMessage');ta.select();try{await navigator.clipboard.writeText(ta.value);document.getElementById('copyMessage').textContent='Copied!';}catch(err){document.getElementById('copyMessage').textContent='Selected — choose Copy';}});
+});
+</script>
+</body>
+</html>
